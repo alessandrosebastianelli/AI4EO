@@ -7,8 +7,8 @@ Short course on Artificial Intelligence Applied to Earth Observation
 - Artificial Intelligence, Machine Learning and Deep Learning
 - Supervised, Un-supervised and Reinforcement Learning
 - Training, Validation and Testing
-## Excercise 1 
-### Intro to Python and Jupyter Notebook
+### Excercise 1 
+- Intro to Python and Jupyter Notebook
 
 
 # Lesson 2 - Artificial NN
