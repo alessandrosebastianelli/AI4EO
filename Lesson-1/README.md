@@ -15,7 +15,7 @@ Please keep in mind that this *excercise* is not meant to be a full course on py
 
 To start the exercise you need a Google Account to get access to Google Colaboratory.
 
-[[Download the code](https://raw.githubusercontent.com/Sebbyraft/AI4EO/main/Lesson-1/Excercise1.jpynb?token=AICNAEQOELQYV2JISZHKANTBJHGIS)] If the download does not start automatically, right click on the page and press *save page with name...*.
+[[Download the code](https://raw.githubusercontent.com/Sebbyraft/AI4EO/main/Lesson-1/Excercise1.ipynb?token=AICNAEX55YZFNUAGD23FYKTBJHKDG)] If the download does not start automatically, right click on the page and press *save page with name...*.
 
 If you already have an account follow this link to [Colab](https://research.google.com/colaboratory/) and then:
 1. access to Colab with your google account
