@@ -9,6 +9,10 @@
 - Dataset
 
 ## Excercise - Intro to Python and Jupyter Notebook
+
+Please keep in mind that this *excercise* is not meant to be a full course on python, but only a gentle introduction to the python notation. You must have already some programming requirements.
+
+
 To start the exercise you need a Google Account to get access to Google Colaboratory.
 
 [[Download the code](https://raw.githubusercontent.com/Sebbyraft/AI4EO/main/Lesson-1/Excercise1.jpynb?token=AICNAEQOELQYV2JISZHKANTBJHGIS)] If the download does not start automatically, right click on the page and press *save page with name...*.
