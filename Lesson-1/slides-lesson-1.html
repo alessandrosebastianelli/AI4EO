@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Slide 1 -->
+				<section>
+					<h3>Introduction to Artificial Intelligence - Machine Learning - Deep Learning</h3>
+					<p>
+						<small>Created by <a href="https://sebbyraft.github.io/">Alessandro Sebastianelli</a></small>
+					</p>
+				</section>
+				<!-- Slide 2 -->
+				<section>
+					<section>
+						<h2>Artificial Intelligence</h2>
+						<p align="justify">Any techniques wich enables computers to mimic human behaviour</p>
+					</section>
+					<section>
+						<h2>Machine Learning</h2>
+						<p align="justify">AI technique that enables computers to lean without being specially programmed to do this</p>
+					</section>
+					<section>
+						<h2>Deep Learning</h2>
+						<p align="justify">A subset of ML that makes possible the computation of multilayer neural networks</p>
+					</section>
+				</section>
+				<!-- Slide 3 -->
+				<section>
+					<section>
+						<h3>Differences between traditional programming and ML</h3>
+						<img width = 600 src="https://artificialintelligence.oodles.io/wp-content/uploads/2019/11/Traditional-Programming.jpg">
+					</section>
+					<section>
+						<p align="justify">A computer program is said to learn from experience E with respect to
+						a certain class of tasks T and performance measure P, if its performance at
+						that class of tasks T, as measured by P, improves with experience E. 
+						Usually P is specific to the class of tasks T being carried out by the system.</p>
+					</section>
+					<section>
+						<p align="justify">ML algorithm is an algorithm that is able to learn from data. This
+							circumstance enables the algorithm to solve tasks that are too difficult to solve with
+							fixed programs written and designed by humans.</p>
+					</section>
+				</section>
+				<!-- Slide 4 -->
+				<section>
+					<section>
+						<h3>Supervised, Unsupervised and Reinforcement Learning</h3>
+						<p align="justify">Based on the way the learning process in an ML algorithm is devised, they can be
+						categorised as supervised, unsupervised and reinforcement learning</p>
+					</section>
+					<section>
+						<h3>Supervised Learning</h3>
+						<p align="justify">It is characterised by a function f(x) that maps the input data x to
+							the desired output data Y.</p>
+						<p align="justify">It is called ‘supervised’ because the values of x and Y are known (i.e. the data are
+							labelled).</p>
+						<p align="justify">During the algorithm learning process, the predictions done on the
+							training data are corrected using the Y values. The objective of a supervised learning
+							algorithm is to find the mapping function f that achieves acceptable levels of
+							performance based on the user needs.</p>
+					</section>
+					<section>
+						<h3>Unsupervised Learning</h3>
+						<p align="justify">Unsupervised learning is a type of ML that looks for previously 
+							undetected patterns in a dataset with no pre-existing
+							labels and with a minimum of human supervision. </p>
+
+						<p align="justify">In contrast to supervised learning that usually makes use of human labelled data, unsupervised
+							learning allows for modelling of probability densities over inputs. The objective here is to 
+							present the most interesting structure that best describes the input data.</p>
+					</section>
+					<section>
+						<h3>Reinforcement Learning</h3>
+						<p align="justify">RL is concerned with how a software agent can find the best actions to take in an
+						environment in order to maximise the notion of cumulative reward. The agent passes
+						from one state (S) to another (S') by choosing actions (A), these actions produce
+						positive or negative changes in the environment, which are reported to the agent as
+						rewards (R).</p>
+					</section>
+				</section>
+				<!-- Slide 5 -->
+				<section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<h2>Dataset</h2>
+					<p>Typically a dataset is divided into three parts</p>
+					<div class="r-hstack justify-center">
+						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+					</div>
+				</section>
+				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+					<div class="r-hstack justify-center">
+						<div>
+							<p>Training</p>
+							<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+						</div>
+						<div>
+							<p data-auto-animate-delay="0.4">Validation</p>
+							<div data-id="box2" data-auto-animate-delay="0.4" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+						</div>
+						<div>
+							<p data-auto-animate-delay="0.8">Testing</p>
+							<div data-id="box3" data-auto-animate-delay="0.8" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+						</div>
+					</div>
+					<p data-auto-animate-delay="0.8" align="justify">During the training the model is trained and evaluated
+						with the <a style="color: cyan">training</a> and <a style="color: magenta">validation</a>  dataset. 
+						Then, after the training, the model is tested witht the <a style="color: yellow">testing</a>  dataset.
+					</p>
+				</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>

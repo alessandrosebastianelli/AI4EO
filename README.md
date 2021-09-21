@@ -1,12 +1,14 @@
 # AI4EO
 Short course on Artificial Intelligence Applied to Earth Observation
 
+**Please note that the slides have been made with reveal.js, to read them first download the reveal.js project folder from [here](https://github.com/hakimel/reveal.js/archive/master.zip), then download the .html file of a specific lesson and put it inside the reveal.js folder. Finally double click on the .html file to open the slide deck.**
+
 
 ## Lesson 1 
 ### Intro to AI/ML/DL
 - Artificial Intelligence, Machine Learning and Deep Learning
 - Supervised, Un-supervised and Reinforcement Learning
-- Training, Validation and Testing
+- Dataset
 ### Excercise
 - Intro to Python and Jupyter Notebook
 
