@@ -2,12 +2,14 @@
 Short course on Artificial Intelligence Applied to Earth Observation
 
 
-# Lesson 1 - Intro to AI/ML/DL
-
+## Lesson 1 
+### Intro to AI/ML/DL
 - Artificial Intelligence, Machine Learning and Deep Learning
 - Supervised, Un-supervised and Reinforcement Learning
 - Training, Validation and Testing
-- Class imbalance and Data Augmentation?
+## Excercise 1 
+### Intro to Python and Jupyter Notebook
+
 
 # Lesson 2 - Artificial NN
 
