@@ -1,10 +1,7 @@
----
-marp: true
-thene: uncover
----
-
-# Introduction to Artificial Intelligence-Machine Learning-Deep Learning
-
-Alessandro Sebastianelli
-
----
+:::mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+:::
