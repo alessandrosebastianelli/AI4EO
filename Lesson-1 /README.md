@@ -1,7 +1,7 @@
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+---
+marp: true
+---
+
+# Your slide deck
+
+Start writing!
