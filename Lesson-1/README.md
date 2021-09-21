@@ -1,7 +1,7 @@
 # Lesson 1 - Introduction to Artificial Intelligence, Machine Learning and Deep Learning
 
 
-[[Download slides](slide-lesson-1.html)]:
+[[Download slides](slides-lesson-1.html)]:
 1. Click on raw
 2. Right click on the page and press *save page with name...*.
 
@@ -17,7 +17,7 @@ Please keep in mind that this *excercise* is not meant to be a full course on py
 
 To start the exercise you need a Google Account to get access to Google Colaboratory.
 
-[[Download the code](Lesson-1/Excercise1.ipynb)]:
+[[Download the code](Excercise1.ipynb)]:
 1. Click on raw
 2. Right click on the page and press *save page with name...*.
 
