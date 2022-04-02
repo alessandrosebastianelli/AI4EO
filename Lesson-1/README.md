@@ -1,29 +1,44 @@
-# Lesson 1 - Introduction to Artificial Intelligence, Machine Learning and Deep Learning
+# Intro to Python
 
 
-[[Download slides](slides-lesson-1.html)]:
-1. Click on raw
-2. Right click on the page and press *save page with name...*.
+##### Variables
 
-## Slides outline
-- Artificial Intelligence, Machine Learning and Deep Learning
-- Supervised, Un-supervised and Reinforcement Learning
-- Dataset
+Numeric variables
+```python
+a = 1
+b = 2.0
+```
 
-## Excercise - Intro to Python and Jupyter Notebook
+String
 
-Please keep in mind that this *excercise* is not meant to be a full course on python, but only a gentle introduction to the python notation. You must have already some programming requirements.
+```python
+a = "alpha"
+b = 'beta'
+```
+
+Boolean
+
+```python
+a = True
+b = False
+```
+
+##### List
+
+```python
+a = [1,2,3]
+b = ['alpha', 'beta', 'gamma']
+```
+
+##### Dictionary
+
+```python
+a = {'a':0, 'b':1, 'c':1}
+```
+
+##### Library
 
 
-To start the exercise you need a Google Account to get access to Google Colaboratory.
-
-[[Download the code](Excercise1.ipynb)]:
-1. Click on raw
-2. Right click on the page and press *save page with name...*.
-
-If you already have an account follow this link to [Colab](https://research.google.com/colaboratory/) and then:
-1. access to Colab with your google account
-2. File -> Upload Block Note
-3. Select the file downloaded (**make sure that the file extension is .jpynb**)
-
-
+```python
+import numpy as np
+```
