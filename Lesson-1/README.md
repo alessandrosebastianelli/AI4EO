@@ -1,7 +1,7 @@
 # Intro to Python
 
 
-##### Variables
+##### Variableaaas
 
 Numeric variables
 ```python
