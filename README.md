@@ -12,6 +12,11 @@ This repository contains slides of the course, exercises and tutorials structure
 The material for this course comes from the book [*Artificial Intelligence Applied to Satellite-based Remote Sensing Data for Earth Observation*](https://shop.theiet.org/artificial-intelligence-applied-to-satellite-based-remote-sensing-data-for-earth-observation), edited by Maria Pia Del Rosso, Alessandro Sebastianelli and Silvia Liberata Ullo, published by the Institution of Engineering and Technlogy (IET).
 
 ---
+### Extra
+- [Matlab tools for Sentinel data](https://github.com/Sebbyraft/SentinelDataAnalysis)
+- [Machine Learning models](https://github.com/Sebbyraft/MachineLearningModels)
+
+---
 Collaborators
 
 [Alessandro Sebastianelli](linkedin.com/in/alessandro-sebastianelli-58545915b), [Maria Pia Del Rosso](linkedin.com/in/maria-pia-del-rosso-34377415b)
