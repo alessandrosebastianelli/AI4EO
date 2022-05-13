@@ -5,5 +5,9 @@ This course is part of the university course "Reti di Telecomunicazioni" from [U
 
 The aim is to introduce students to Earth Observation (EO) data, processing techniques and tools. It also aim to introduce some preliminary concepts of Machine Learning and Deep Learning applied to EO data.
 
-This repository contains slides of the course, exercises and tutorials structured in corrispetive folders.
+This repository contains slides of the course, exercises and tutorials structured in corresponding folders.
 
+-------
+Collaborators
+
+[Alessandro Sebastianelli](linkedin.com/in/alessandro-sebastianelli-58545915b), [Maria Pia Del Rosso](linkedin.com/in/maria-pia-del-rosso-34377415b)
