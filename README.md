@@ -7,6 +7,8 @@ The aim is to introduce students to Earth Observation (EO) data, processing tech
 
 This repository contains slides of the course, exercises and tutorials structured in corresponding folders.
 
+[Download this repo](https://github.com/Sebbyraft/AI4EO/archive/refs/heads/main.zip)
+
 ---
 ### Source
 The material for this course comes from the book [*Artificial Intelligence Applied to Satellite-based Remote Sensing Data for Earth Observation*](https://shop.theiet.org/artificial-intelligence-applied-to-satellite-based-remote-sensing-data-for-earth-observation), edited by Maria Pia Del Rosso, Alessandro Sebastianelli and Silvia Liberata Ullo, published by the Institution of Engineering and Technlogy (IET).
