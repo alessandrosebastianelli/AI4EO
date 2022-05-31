@@ -8,7 +8,7 @@ The exercies of this module are based on the [EuroSAT](https://github.com/phelbe
 
 ![](https://github.com/phelber/EuroSAT/blob/master/eurosat_overview_small.jpg?raw=true)
 
-This module contains four exercies:
+This module contains five exercies:
 
 1. [Machine Learning Based Multiclass Classification](EuroSAT_ML_Classification.ipynb)
 2. [Deep Learning Based Multiclass Classification](EuroSAT_CNN_Classification.ipynb)
