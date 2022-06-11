@@ -30,12 +30,13 @@ var NDVI = S2.select(['nd']);
 // Calculate the temporal mean using the images in the NDVI catalog
 var NDVImed = NDVI.mean(); 
 
-// Add the NDVI map to the world map
-Map.addLayer(NDVImed.clip(geometry), visParams_ndvi, 'NDVI');
-
 // Set some parameteres for the plot
 var visParams_ndvi = {min: -0.2, max: 0.8, palette: 'FFFFFF, CE7E45, DF923D, F1B555, FCD163, 99B718, 74A901, 66A000, 529400,' +
     '3E8601, 207401, 056201, 004C00, 023B01, 012E01, 011D01, 011301'};
+
+
+// Add the NDVI map to the world map
+Map.addLayer(NDVImed.clip(geometry), visParams_ndvi, 'NDVI');
 
 // Plot a chart using the band 'nd' of catalog S2 and appyling a geometry mean
 var plotNDVI = ui.Chart.image.seriesByRegion(S2, geometry,ee.Reducer.mean(),
