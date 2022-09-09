@@ -1,0 +1,88 @@
+var EARTH_RADIUS  = 6271.0
+var DEGREES_TO_RADIANS = 3.1415/180.0
+var RADIANS_TO_DEGREE = 180.0/3.1415
+
+function change_in_latitude(kms){
+  return (kms/EARTH_RADIUS)*RADIANS_TO_DEGREE;
+}
+
+function change_in_longitude(latitude, kms){
+    var r = EARTH_RADIUS*Math.cos(latitude*DEGREES_TO_RADIANS)
+    return (kms/r)*RADIANS_TO_DEGREE;
+}
+
+function get_coordinates_square(latitude, longitude, size){
+  var  half_size = size/2;
+  var  slat = latitude+change_in_latitude(-half_size);
+  var  nlat = latitude+change_in_latitude(half_size);
+  var  wlon = longitude+change_in_longitude(latitude, -half_size);
+  var  elon = longitude+change_in_longitude(latitude, half_size);
+  
+  return [[elon, nlat], [wlon, nlat], [wlon, slat], [elon, slat]];
+}
+
+
+//--------------------------------- USER VARs ----------------------------------
+var lon = geometry.coordinates().get(0).getInfo()
+var lat = geometry.coordinates().get(1).getInfo()
+console.log('Lat: ' + lat.toString() + ' Lon: ' + lon.toString())
+
+var start_date = '2019-08-15';
+var end_date =   '2019-12-15';
+
+var folder = 's2data';
+var export_name = 's2_'+folder+'_';
+
+var sizeinkm = 10
+var zoom = 9
+//--------------------------------- USER VARs ----------------------------------
+
+// YYYY-MM-DD
+var date = ee.Filter.date(start_date, end_date)
+var polygon = get_coordinates_square(lat, lon, sizeinkm);
+var geometry = ee.Geometry.Polygon(polygon);
+Map.setCenter(lon, lat, zoom);
+//Map.addLayer(geometry);
+
+
+// Map the function over one year of data and take the median.
+// Load Sentinel-2 TOA reflectance data.
+var s2dataset = ee.ImageCollection('COPERNICUS/S2')
+                  .filter(date)
+                  .filterBounds(geometry)
+                  .sort('system:time_start', true);
+                  
+var rgbVis = {
+  min: 0.0,
+  max: 3000,
+  bands: ['B4', 'B3', 'B2'],
+};
+
+
+function addS2Image(img){
+  var id = img.id;
+  var image = ee.Image(img.id).toDouble();
+
+  //console.log(image)
+  
+  var s2_name = image.date().format('yyyy-MM-dd').getInfo();
+  var name = s2_name.toString();
+  
+  Export.image.toDrive({
+    image: image,
+    description: name,
+    fileNamePrefix: name, 
+    folder:"gee_data",
+    scale: 10,
+    fileFormat: 'GeoTIFF',
+    region: geometry,
+  });
+  
+  Map.addLayer(image.clip(geometry), rgbVis, name, false);
+}
+
+
+
+s2dataset.evaluate(function(s2dataset){
+  s2dataset.features.map(addS2Image)
+})
